@@ -1,0 +1,113 @@
+/* 포트폴리오 전용 스타일 */
+.board-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.board-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 정렬 박스 스타일 */
+.sort-box select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* 포트폴리오 그리드 레이아웃 */
+.portfolio-grid {
+    display: grid;
+    /* 카드의 최소 너비는 280px, 공간이 남으면 1fr씩 차지하여 반응형으로 조절 */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* 포트폴리오 카드 스타일 */
+.portfolio-card {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+/* 카드 섬네일 영역 */
+.card-thumbnail {
+    width: 100%;
+    /* 16:9 비율 유지 */
+    aspect-ratio: 16 / 9;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+}
+
+.card-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율을 유지하면서 영역을 꽉 채움 */
+}
+
+/* 카드 콘텐츠 영역 */
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+    /* 제목이 길어지면 ...으로 표시 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85em;
+    color: #666;
+}
+
+.card-meta span {
+    margin-right: 15px;
+}
+
+.action-btn {
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #C70039;
+}

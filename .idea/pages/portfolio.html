@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUJUKI - FireWorks</title> <!-- 페이지 타이틀 변경 -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+<div class="site-wrap">
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="../index.html">🎇 MUJUKI - FireWorks</a>
+            </div>
+            <ul class="navbar-menu">
+                <li class="dropdown">
+                    <a href="#">상품</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">축제</a></li>
+                        <li><a href="#">폭죽</a></li>
+                        <li><a href="#">파티용품</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html">포트폴리오</a></li>
+                <li><a href="contact.html">문의하기</a></li>
+                <li><a href="reviews.html">후기</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <aside class="sidebar-left">
+            <!-- 사이드바 내용은 동일 -->
+            <div class="contact-info">
+                <h2>문의 안내</h2>
+                <div class="info-item">
+                    <h3>📞 문의 전화</h3>
+                    <p>010-2360-3243</p>
+                </div>
+                <div class="info-item"><h3>📧 이메일</h3><p>contact@fireworks.com</p></div>
+                <div class="info-item"><h3>📱 SNS 문의</h3><p>카카오톡: @fireworks</p></div>
+            </div>
+        </aside>
+
+        <!-- 👇👇 포트폴리오용 content-right 👇👇 -->
+        <section class="content-right">
+            <div class="board-section">
+                <div class="board-header">
+                    <h2>포트폴리오</h2>
+                    <div class="board-actions">
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="검색어를 입력하세요.">
+                            <button id="search-btn">검색</button>
+                        </div>
+                        <!-- 정렬 기능 추가 -->
+                        <div class="sort-box">
+                            <select id="sort-option">
+                                <option value="latest">최신순</option>
+                                <option value="likes">추천순</option>
+                                <option value="comments">댓글많은순</option>
+                            </select>
+                        </div>
+                        <button id="write-btn" class="action-btn">글쓰기</button>
+                    </div>
+                </div>
+                <!-- 게시물이 카드 형태로 들어갈 컨테이너 -->
+                <div id="portfolio-grid" class="portfolio-grid">
+                    <!-- JS에 의해 내용이 채워집니다. -->
+                </div>
+                <div class="pagination">
+                    <!-- JS에 의해 내용이 채워집니다. -->
+                </div>
+            </div>
+        </section>
+        <!-- 👆👆 여기까지 교체 👆👆 -->
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                MUJUKI - FireWorks
+            </div>
+            <div class="footer-info">
+                <p><strong>사업자명:</strong> MUJUKI</p>
+                <p><strong>사업자번호:</strong> 123-45-67890</p>
+                <p><strong>주소:</strong> 경기도 오산시 원동로</p>
+                <p><strong>이메일:</strong> contact@mujuki.com</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="../../.idea/index.js"></script>
+<script src="../pages/portfolio.js"></script>
+</body>
+</html>

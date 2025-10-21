@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUJUKI - FireWorks</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../pages/write.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="../index.html">🎇 MUJUKI - FireWorks</a>
+        </div>
+        <ul class="navbar-menu">
+            <li class="dropdown">
+                <a href="#">상품</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">축제</a></li>
+                    <li><a href="#">폭죽</a></li>
+                    <li><a href="#">파티용품</a></li>
+                </ul>
+            </li>
+            <li><a href="portfolio.html">포트폴리오</a></li>
+            <li><a href="contact.html">문의하기</a></li>
+            <li><a href="reviews.html">후기</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main-container">
+    <aside class="sidebar-left">
+        <div class="contact-info">
+            <h2>문의 안내</h2>
+            <div class="info-item">
+                <h3>📞 문의 전화</h3>
+                <p>010-2360-3243</p>
+            </div>
+            <div class="info-item">
+                <h3>📧 이메일</h3>
+                <p>contact@fireworks.com</p>
+            </div>
+            <div class="info-item">
+                <h3>📱 SNS 문의</h3>
+                <p>카카오톡: @fireworks</p>
+            </div>
+        </div>
+    </aside>
+
+    <section class="content-right">
+        <div class="write-section">
+            <h2>문의하기</h2>
+            <form id="write-form">
+                <div class="form-group">
+                    <label for="write-name">의뢰자 이름</label>
+                    <input type="text" id="write-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="write-phone">의뢰자 전화번호</label>
+                    <input type="tel" id="write-phone" placeholder="010-0000-0000" required>
+                </div>
+                <div class="form-group">
+                    <label for="write-category">카테고리</label>
+                    <select id="write-category" required>
+                        <option value="">카테고리를 선택하세요</option>
+                        <option value="party">파티</option>
+                        <option value="fireworks">폭죽</option>
+                        <option value="supplies">파티용품</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="write-title">제목</label>
+                    <input type="text" id="write-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="write-content">문의 내용</label>
+                    <textarea id="write-content" rows="10" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="write-password">게시글 비밀번호 (숫자 4자리)</label>
+                    <input type="password" id="write-password" class="pass-input" required maxlength="4" pattern="\d{4}" inputmode="numeric" placeholder="숫자 4자리를 입력하세요">
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="cancel-btn">취소</button>
+                    <button type="submit" id="submit-btn">제출하기</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            MUJUKI - FireWorks
+        </div>
+        <div class="footer-info">
+            <p><strong>사업자명:</strong> MUJUKI</p>
+            <p><strong>사업자번호:</strong> 123-45-67890</p>
+            <p><strong>주소:</strong> 경기도 오산시 원동로</p>
+            <p><strong>이메일:</strong> contact@mujuki.com</p>
+        </div>
+    </div>
+</footer>
+<script src="../../.idea/index.js"></script>
+<script src="../pages/write.js"></script>
+</body>
+</html>

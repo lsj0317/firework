@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUJUKI - FireWorks</title>
+    <link rel="stylesheet" href="../style.css"> </head>
+    <link rel="stylesheet" href="../pages/contact.css">
+<body>
+<div class="site-wrap">
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="../index.html">🎇 MUJUKI - FireWorks</a>
+            </div>
+            <ul class="navbar-menu">
+                <li class="dropdown">
+                    <a href="#">상품</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">축제</a></li>
+                        <li><a href="#">폭죽</a></li>
+                        <li><a href="#">파티용품</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html">포트폴리오</a></li>
+                <li><a href="contact.html">문의하기</a></li>
+                <li><a href="reviews.html">후기</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <aside class="sidebar-left">
+            <div class="contact-info">
+                <h2>문의 안내</h2>
+                <div class="info-item">
+                    <h3>📞 문의 전화</h3>
+                    <p>010-2360-3243</p>
+                </div>
+                <div class="info-item"><h3>📧 이메일</h3><p>contact@fireworks.com</p></div>
+                <div class="info-item"><h3>📱 SNS 문의</h3><p>카카오톡: @fireworks</p></div>
+            </div>
+        </aside>
+
+        <section class="content-right">
+            <div class="board-section"> <div class="board-header"> <h2>문의 게시판</h2>
+                <div class="board-actions">
+                    <div class="search-box">
+                        <select id="search-option">
+                            <option value="all">전체</option>
+                            <option value="title">제목</option>
+                            <option value="author">작성자</option>
+                        </select>
+                        <input type="text" id="search-input" placeholder="검색어를 입력하세요.">
+                        <button id="search-btn">검색</button>
+                    </div>
+                    <button id="write-btn" class="action-btn">글쓰기</button> </div>
+            </div>
+                <table class="board-table"> <thead>
+                <tr>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                    <th>답변상태</th> </tr>
+                </thead>
+                    <tbody id="board-tbody">
+                    </tbody>
+                </table>
+                <div class="pagination">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                MUJUKI - FireWorks
+            </div>
+            <div class="footer-info">
+                <p><strong>사업자명:</strong> MUJUKI</p>
+                <p><strong>사업자번호:</strong> 123-45-67890</p>
+                <p><strong>주소:</strong> 경기도 오산시 원동로</p>
+                <p><strong>이메일:</strong> contact@mujuki.com</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div id="login-modal" class="modal-overlay">
+    <div class="modal-content">
+        <p>로그인이 필요한 서비스입니다.<br>로그인 하시겠습니까?</p>
+        <div class="modal-actions">
+            <button id="modal-confirm-btn">확인</button>
+            <button id="modal-cancel-btn">취소</button>
+        </div>
+    </div>
+</div>
+<script src="../../.idea/index.js"></script>
+<script src="../pages/contact.js"></script>
+</body>
+</html>
